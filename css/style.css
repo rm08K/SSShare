@@ -1,0 +1,35 @@
+/* Mypage */
+
+.mypage-image {
+    width: 100%;
+}
+
+.mypage-list {
+    margin-bottom: 0;
+    list-style: none;
+    max-width: 500px;
+    padding-left: 0;
+}
+
+.mypage-list li {
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.mypage-list_items {
+    list-style: none;
+}
+
+.mypage-list_items a {
+    text-decoration: none;
+}
+
+.mypage-list_items p {
+    font-weight: 300;
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+
+.mypage-list_items small {
+    padding-left: 10px;
+}

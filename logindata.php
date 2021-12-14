@@ -10,7 +10,7 @@ if ($login_id == 'admin' && $password == 'password') {
     $_SESSION['is_logged_in'] = TRUE;
 
     // ログイン処理が終わったので index.php に飛ばす
-    header("Location: index.php");
+    header("Location: mypage.php");
 } else {
     // ログイン失敗
     echo 'ログインID、またはパスワードが一致しません。';
