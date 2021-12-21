@@ -8,6 +8,6 @@ if ($login_id == 'admin' && $password == 'password') {
     header("Location: mypage.php");
 } else {
     // ログイン失敗
-    echo 'ログインID、またはパスワードが一致しません。';
+    echo '<p class="login-failure">ログインID、またはパスワードが一致しません。</p>';
     include_once('login.php');
 }

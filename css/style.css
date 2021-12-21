@@ -19,6 +19,10 @@ body {
     align-items: center;
 }
 
+.inContainer {
+    margin-bottom: 50px;
+}
+
 /* Toppage */
 
 .toppage-textBox {
@@ -27,20 +31,46 @@ body {
 }
 
 .toppage-title {
-    animation: 1s appear;
+    animation: 1.5s appear;
     margin-top: 0;
     text-align: left;
 }
 
 .toppage-text {
-    animation: 1s appear;
+    animation: 1.5s appear;
 }
 
 .toppage-svg {
+    animation: 1.5s appear;
     max-width: 500px;
     width: 50vw;
 }
 
+.toppage-link {
+    animation: 1.5s appear;
+}
+
+/* loginPage */
+
+.login-input {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.login-button {
+    width: 200px;
+}
+
+.login-failure {
+    color: rgb(128, 1, 1);
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%) translateY(-50%);
+}
 /* Mypage */
 
 .mypage-image {

@@ -24,17 +24,17 @@ if (isset($_SESSION['is_logged_in'])) {
             <h3>ログイン</h3>
             <form action="logindata.php" method="POST">
                 <div>
-                    <label>ログインID
-                        <input type="text" name="login_id" />
+                    <label>
+                        <input class="login-input" type="text" name="login_id" placeholder="ログインID" />
                     </label>
                 </div>
                 <div>
-                    <label>パスワード
-                        <input type="password" name="password" />
+                    <label>
+                        <input class="login-input" type="password" name="password" placeholder="パスワード" />
                     </label>
                 </div>
                 <div>
-                    <button>ログイン</button>
+                    <button class="login-button">ログイン</button>
                 </div>
             </form>
         </div>
