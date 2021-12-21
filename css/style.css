@@ -1,3 +1,46 @@
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Toppage */
+
+.toppage-textBox {
+    vertical-align: middle;
+    margin-right: 50px;
+}
+
+.toppage-title {
+    animation: 1s appear;
+    margin-top: 0;
+    text-align: left;
+}
+
+.toppage-text {
+    animation: 1s appear;
+}
+
+.toppage-svg {
+    max-width: 500px;
+    width: 50vw;
+}
+
 /* Mypage */
 
 .mypage-image {
