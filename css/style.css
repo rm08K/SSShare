@@ -73,11 +73,25 @@ body {
 }
 /* Mypage */
 
+.mypageBar {
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mypage-menu {
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+    gap: 50px;
+}
+
 .mypage-image {
     width: 100%;
 }
 
 .mypage-list {
+    margin: auto;
     margin-bottom: 0;
     list-style: none;
     max-width: 500px;

@@ -8,6 +8,7 @@ if (!isset($_SESSION['is_logged_in'])) {
 ?>
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,18 +17,19 @@ if (!isset($_SESSION['is_logged_in'])) {
 </head>
 
 <body>
+    <div class="mypageBar">
     <h3>スクリーンショット一覧</h3>
-    <a href="register.php">新規投稿</a>
-    <a href="logout.php">ログアウト</a>
+    <div class="mypage-menu">
+        <a href="register.php">新規投稿</a>
+        <a href="logout.php">ログアウト</a>
+    </div>
+    </div>
     <?php
-    // 記事ファイルの一覧
     $files = glob('data/*.json');
     ?>
     <ul class="mypage-list">
         <?php foreach ($files as $file) { ?>
             <?php
-            // JSON 形式を PHP 連想配列に変換(json_decode)
-            // XSS の対策に htmlspecialchars をつかう
             $filebase = basename($file, '.json');
             $json_str = file_get_contents($file);
             $json = json_decode($json_str, TRUE);
