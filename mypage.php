@@ -18,6 +18,7 @@ if (!isset($_SESSION['is_logged_in'])) {
 <body>
     <h3>スクリーンショット一覧</h3>
     <a href="register.php">新規投稿</a>
+    <a href="logout.php">ログアウト</a>
     <?php
     // 記事ファイルの一覧
     $files = glob('data/*.json');

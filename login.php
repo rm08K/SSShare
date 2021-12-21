@@ -1,3 +1,12 @@
+<?php
+// ログインユーザのみが処理可能
+session_start();
+if (isset($_SESSION['is_logged_in'])) {
+    header('Location: mypage.php');
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html>
 

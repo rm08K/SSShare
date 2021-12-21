@@ -8,8 +8,14 @@
 <body>
     <h1>SSShare</h1>
     <p>スクリーンショットをシェアしよう。</p>
-    <a href="#">登録</a>
+    <a id="registerButton" href="#">登録</a>
     <a href="login.php">ログイン</a>
-    <!-- <?php phpinfo(); ?> -->
+    <script lang="Javascript">
+        let button = document.getElementById('registerButton')
+        button.addEventListener('click',()=>{
+            window.alert('登録は未実装だよ！')
+        })
+    </script>
 </body>
+
 </html>
